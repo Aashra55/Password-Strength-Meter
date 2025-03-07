@@ -89,7 +89,7 @@ if password:
     st.info(message)
     if button:
         if any(pwd == password for _, pwd in st.session_state.history):
-            st.warning("Please enter a passsword differ than previous one!") 
+            st.warning("Please enter a password differ than previous one!") 
         else: 
             st.session_state.history.append((name, password))
     
